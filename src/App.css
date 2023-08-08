@@ -1,0 +1,25 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:movie;
+}
+@font-face{
+  font-family:movie;
+  src:url("./fonts/bright.otf")
+}
+.navbar{
+  padding:3%;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+}
+.navbar h1{
+  font-size:60px;
+  margin-right:2%;
+}
+.main-banner .main-para{
+  font-size:35px;
+}

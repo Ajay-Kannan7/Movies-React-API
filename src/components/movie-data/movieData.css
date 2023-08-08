@@ -1,0 +1,80 @@
+.movie-data-banner{
+    width:100%;
+    background-color:black;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.movie-data-banner .movie-element{
+    width:25%;
+    background-color:white;
+    padding:2%;
+    margin:2%;
+    border-radius:10px;
+}
+
+.movie-data-banner .movie-element .movie-image,
+.movie-data-banner .movie-element .movie-image img{
+    width:100%;
+    height:50vh;
+    margin-bottom:5%;
+}
+
+.movie-data-banner .movie-element .movie-data h1,
+.movie-data-banner .movie-element .movie-data h3,
+.movie-data-banner .movie-element .movie-data p{
+    margin-bottom:5%;
+}
+
+.movie-data-banner .movie-element .movie-data h1{
+    font-size:50px;
+}
+
+.movie-data-banner .movie-element .movie-data h3{
+    font-size:25px;
+}
+
+.movie-data-banner .movie-element .movie-data p{
+    font-size:20px;
+}
+
+.movie-data-banner .movie-element .movie-data button{
+    padding:4%;
+    border:4px solid black;
+    border-radius:10px;
+}
+
+.movie-data-banner .movie-element .movie-data button .link{
+    font-size:20px;
+    text-decoration:underline;
+    color:black;
+}
+
+.movie-data-banner .movie-element .movie-data button .link:hover{
+    text-decoration:none;
+}
+@media only screen and (max-width:900px){
+    .movie-data-banner{
+        flex-direction: column;
+    }
+    .movie-data-banner .movie-element{
+        width:90%;
+        margin:9% 0;
+    }
+    .movie-data-banner .movie-element .movie-data h1{
+        font-size:60px;
+    }
+    .movie-data-banner .movie-element .movie-data h3{
+        font-size:30px;
+    }
+    .movie-data-banner .movie-element .movie-data p{
+        font-size:25px;
+    }
+    .movie-data-banner .movie-element .movie-data button .link{
+        font-size:30px;
+    }
+}

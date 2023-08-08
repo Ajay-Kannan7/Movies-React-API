@@ -1,0 +1,87 @@
+.movie-detail-banner{
+    width:100%;
+    background-color:black;
+    padding:3%;
+}
+.movie-detail-banner .movie-detail-element{
+    width:90%;
+    margin:0 auto;
+    background-color:black;
+    color:white;
+    display:flex;
+    align-items: center;
+    padding:2%;
+    justify-content:space-around;
+    border-radius:10px;
+    border:5px solid white;
+}
+.movie-detail-banner .movie-detail-element .movie-detail-image{
+    width:50%;
+    margin-bottom:5%;
+}
+.movie-detail-banner .movie-detail-element .movie-detail-image img{
+    width:100%;
+}
+.movie-detail-banner .movie-details{
+    width:45%;
+}
+.movie-detail-banner .movie-details h1{
+    font-size:70px;
+    margin-bottom:5%;
+}
+.movie-detail-banner .movie-details p{
+    font-size:25px;
+    margin-bottom:5%;
+}
+.movie-detail-banner .movie-details button{
+    padding:4%;
+    border:4px solid black;
+    border-radius:10px;
+    font-size:25px;
+    cursor:pointer;
+}
+.movie-detail-banner #dialog{
+    margin:5% auto;
+    padding:4%;
+    text-align:center;
+    border-radius:20px;
+}
+
+.movie-detail-banner #dialog::backdrop{
+    background-color:hsla(314, 55%, 3%, 0.70);
+}
+.movie-detail-banner #dialog h1{
+    font-size:50px;
+}
+.movie-detail-banner #dialog form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.movie-detail-banner #dialog form label{
+    font-size:25px;
+}
+.movie-detail-banner #dialog form input{
+    padding:5%;
+    font-size:18px;
+}
+.movie-detail-banner #dialog form button{
+    padding:4%;
+    border:4px solid black;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+@media only screen and (max-width:900px){
+    .movie-detail-banner .movie-detail-element{
+        width:95%;
+        flex-direction:column;
+    }
+    .movie-detail-banner .movie-detail-element .movie-detail-image,
+    .movie-detail-banner .movie-detail-element .movie-details{
+        width:100%;
+    }
+    .movie-detail-banner #dialog{
+        width:95%;
+    }
+}
